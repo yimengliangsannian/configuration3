@@ -1,0 +1,1363 @@
+2020-08-03 10:44:29,180 7      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:44:29,210 37     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:44:29 CST 2020]; root of context hierarchy
+2020-08-03 10:44:29,247 74     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:44:29,495 322    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:44:29,525 352    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:44:29,758 585    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:44:30,263 1090   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:44:30,312 1139   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:44:30,324 1151   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:44:30,328 1155   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@7a2229a8
+2020-08-03 10:44:30,368 1195   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:30,373 1200   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:44:30,394 1221   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:44:32,415 3242   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:33,543 4370   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:35,573 6400   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:36,693 7520   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:38,773 9600   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:39,913 10740  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:41,973 12800  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:43,093 13920  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:45,173 16000  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:46,313 17140  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:48,353 19180  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:49,492 20319  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:51,553 22380  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:52,693 23520  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:54,753 25580  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:55,873 26700  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:44:57,922 28749  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:44:59,043 29870  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:01,103 31930  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:02,243 33070  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:04,273 35100  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:05,402 36229  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:07,462 38289  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:07,563 38390  [ost-startStop-1] ERROR ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, waiting for retry, cause: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo, dubbo version: 2.6.2, current host: 10.254.5.121
+com.alibaba.dubbo.rpc.RpcException: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:302)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:286)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:63)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:65)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:106)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:394)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:333)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:163)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:66)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:163)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:638)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:686)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:554)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 54 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 59 more
+2020-08-03 10:45:07,583 38410  [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:45:08,563 39390  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:10,323 41150  [yTimer-thread-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:45:10,622 41449  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:11,743 42570  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:13,793 44620  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:14,933 45760  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:16,978 47805  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:18,113 48940  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:20,116 50943  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:21,218 52045  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:23,233 54060  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:24,343 55170  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:26,358 57185  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:27,459 58286  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:29,463 60290  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:30,564 61391  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:32,580 63407  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:33,682 64509  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:35,685 66512  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:35,797 66624  [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userConctoller': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, cause: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+2020-08-03 10:45:35,803 66630  [ost-startStop-1] ERROR .web.servlet.DispatcherServlet  - Context initialization failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userConctoller': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, cause: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:638)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:686)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:554)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService': FactoryBean threw exception on object creation; nested exception is java.lang.IllegalStateException: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, cause: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:170)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 31 more
+Caused by: java.lang.IllegalStateException: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103, cause: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.subscribe(FailbackRegistry.java:207)
+	at com.alibaba.dubbo.registry.integration.RegistryDirectory.subscribe(RegistryDirectory.java:159)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:305)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:286)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:63)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:65)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:106)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:394)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:333)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:163)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:66)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:163)
+	... 42 more
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to subscribe consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doSubscribe(ZookeeperRegistry.java:193)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.subscribe(FailbackRegistry.java:190)
+	... 54 more
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doSubscribe(ZookeeperRegistry.java:184)
+	... 55 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 59 more
+2020-08-03 10:45:36,794 67621  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:38,798 69625  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:39,898 70725  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:41,913 72740  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:43,015 73842  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:45,023 75850  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:46,143 76970  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:48,193 79020  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:48,313 79140  [yTimer-thread-1] WARN  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Failed to retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103], waiting for again, cause: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo, dubbo version: 2.6.2, current host: 10.254.5.121
+com.alibaba.dubbo.rpc.RpcException: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:315)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry$1.run(FailbackRegistry.java:68)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 9 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 14 more
+2020-08-03 10:45:49,313 80140  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:51,373 82200  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:52,493 83320  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:53,334 84161  [yTimer-thread-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:45:54,538 85365  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:55,673 86500  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:45:57,753 88580  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:45:58,873 89700  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:00,914 91741  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:02,053 92880  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:04,113 94940  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:05,248 96075  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:07,303 98130  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:08,423 99250  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:10,473 101300 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:11,613 102440 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:13,663 104490 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:14,774 105601 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:16,815 107642 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:17,928 108755 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:19,953 110780 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:21,073 111900 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:23,118 113945 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:24,243 115070 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:26,283 117110 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:27,403 118230 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:29,443 120270 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:30,573 121400 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:32,613 123440 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:32,733 123560 [yTimer-thread-1] WARN  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Failed to retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103], waiting for again, cause: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo, dubbo version: 2.6.2, current host: 10.254.5.121
+com.alibaba.dubbo.rpc.RpcException: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=10244&timestamp=1596422670153, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.retry(FailbackRegistry.java:315)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry$1.run(FailbackRegistry.java:68)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:308)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 9 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 14 more
+2020-08-03 10:46:33,733 124560 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:35,793 126620 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:36,913 127740 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:37,773 128600 [yTimer-thread-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10244&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422670103], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:46:38,973 129800 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:40,093 130920 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:42,148 132975 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:43,254 134081 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:45,271 136098 [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:46,393 137220 [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:50,257 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:46:50,285 28     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:46:50 CST 2020]; root of context hierarchy
+2020-08-03 10:46:50,317 60     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:46:50,563 306    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:46:50,613 356    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:46:50,861 604    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:46:51,409 1152   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:46:51,449 1192   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:46:51,463 1206   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@63229f5e
+2020-08-03 10:46:51,508 1251   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:51,510 1253   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:46:51,533 1276   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:46:53,538 3281   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:54,648 4391   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:56,673 6416   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:46:57,793 7536   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:46:59,843 9586   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:00,948 10691  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:02,993 12736  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:03,046 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:47:03,066 20     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:47:03 CST 2020]; root of context hierarchy
+2020-08-03 10:47:03,113 67     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:47:03,373 327    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:47:03,417 371    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:47:03,593 547    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:47:04,115 1069   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:47:04,123 13866  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:04,153 1107   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:47:04,163 1117   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:47:04,163 1117   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:47:04,163 1117   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:47:04,164 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@1ada8820
+2020-08-03 10:47:04,216 1170   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:04,216 1170   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:47:04,247 1201   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=8944&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422823984, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:47:06,173 15916  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:06,273 3227   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:07,293 17036  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:07,393 4347   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:09,333 19076  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:09,434 6388   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:10,453 20196  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:10,553 7507   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:12,513 22256  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:12,613 9567   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:13,633 23376  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:13,733 10687  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:15,713 25456  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:15,753 12707  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:16,823 26566  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:16,883 13837  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:18,883 28626  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:18,943 15897  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:20,003 29746  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:20,083 17037  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:22,043 31786  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:22,123 19077  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:23,163 32906  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:23,263 20217  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:25,223 34966  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:25,343 22297  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:26,363 36106  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:26,483 23437  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:28,423 38166  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:28,563 25517  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:28,543 38286  [ost-startStop-1] ERROR ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245, waiting for retry, cause: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=18124&timestamp=1596422811293, cause: KeeperErrorCode = ConnectionLoss for /dubbo, dubbo version: 2.6.2, current host: 10.254.5.121
+com.alibaba.dubbo.rpc.RpcException: Failed to register consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo_service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=18124&timestamp=1596422811293, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.doRefer(RegistryProtocol.java:302)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.refer(RegistryProtocol.java:286)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.refer(QosProtocolWrapper.java:63)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.refer(ProtocolFilterWrapper.java:106)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.refer(ProtocolListenerWrapper.java:65)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.refer(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:394)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:333)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:163)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:66)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.doGetObjectFromFactoryBean(FactoryBeanRegistrySupport.java:163)
+	at org.springframework.beans.factory.support.FactoryBeanRegistrySupport.getObjectFromFactoryBean(FactoryBeanRegistrySupport.java:101)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getObjectForBeanInstance(AbstractBeanFactory.java:1645)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getObjectForBeanInstance(AbstractAutowireCapableBeanFactory.java:1178)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:257)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:251)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1325)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1291)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1101)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:638)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:686)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:554)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 54 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 59 more
+2020-08-03 10:47:28,563 38306  [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:47:29,553 39296  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:29,673 26627  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:31,433 41176  [yTimer-thread-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Retry register [consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18124&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422811245], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:47:31,593 41336  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:31,692 28646  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:32,733 42476  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:32,833 29787  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:34,793 44536  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:34,913 31867  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:35,893 45636  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:36,053 33007  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:37,953 47696  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:38,093 35047  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:47:39,054 48797  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:47:39,233 36187  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:32,702 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:49:32,733 31     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:49:32 CST 2020]; root of context hierarchy
+2020-08-03 10:49:32,773 71     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:49:33,024 322    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:49:33,055 353    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:49:33,247 545    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:49:33,770 1068   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:49:33,810 1108   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:49:33,820 1118   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:49:33,822 1120   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:49:33,823 1121   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4ebeb1be
+2020-08-03 10:49:33,863 1161   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:49:33,863 1161   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:33,891 1189   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_service&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=980&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596422973620, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:49:35,903 3201   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:37,033 4331   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:39,109 6407   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:40,233 7531   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:42,263 9561   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:43,383 10681  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:45,443 12741  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:46,563 13861  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:48,593 15891  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:49,714 17012  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:51,778 19076  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:52,893 20191  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:54,953 22251  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:56,092 23390  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:49:58,153 25451  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:49:59,293 26591  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:01,344 28642  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:02,483 29781  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:04,533 31831  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:05,678 32976  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:07,713 35011  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:08,833 36131  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:23,848 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:50:23,883 35     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:50:23 CST 2020]; root of context hierarchy
+2020-08-03 10:50:23,934 86     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:50:24,187 339    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:50:24,217 369    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:50:24,410 562    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:50:25,002 1154   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:50:25,034 1186   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:50:25,043 1195   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:50:25,044 1196   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4ebeb1be
+2020-08-03 10:50:25,085 1237   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:25,085 1237   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:50:25,105 1257   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo_consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=13308&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596423024843, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:50:27,144 3296   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:28,273 4425   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:30,333 6485   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:31,453 7605   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:50:33,483 9635   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:50:34,603 10755  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:54,935 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 10:58:54,965 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 10:58:54 CST 2020]; root of context hierarchy
+2020-08-03 10:58:55,005 70     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 10:58:55,237 302    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 10:58:55,266 331    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:58:55,468 533    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:58:55,999 1064   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:58:56,032 1097   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:58:56,042 1107   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 10:58:56,044 1109   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@17aa0950
+2020-08-03 10:58:56,084 1149   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:56,084 1149   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:58:56,089 1154   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 10:58:56,109 1174   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=4196&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596423535849, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:59:56,085 61150  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 10:59:56,085 61150  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 10:59:57,823 62888  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:59:57,824 62889  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:00:57,824 122889 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0
+2020-08-03 11:00:57,824 122889 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:00:59,375 124440 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:00:59,376 124441 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:02:24,054 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:02:24,094 40     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:02:24 CST 2020]; root of context hierarchy
+2020-08-03 11:02:24,164 110    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:02:24,644 590    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:02:24,694 640    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:02:25,034 980    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:02:25,878 1824   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:02:25,954 1900   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 11:02:25,974 1920   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@238ca153
+2020-08-03 11:02:26,049 1995   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:02:26,049 1995   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:02:26,054 2000   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:02:26,092 2038   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=6492&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596423745604, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:03:26,049 61995  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0
+2020-08-03 11:03:26,049 61995  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:03:27,197 63143  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:03:27,198 63144  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:04:27,214 123160 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60016ms for sessionid 0x0
+2020-08-03 11:04:27,215 123161 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60016ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:04:29,084 125030 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:04:29,084 125030 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:05:29,085 185031 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:05:29,085 185031 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:05:30,953 186899 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:05:30,955 186901 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:07:20,380 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:07:20,404 24     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:07:20 CST 2020]; root of context hierarchy
+2020-08-03 11:07:20,445 65     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:07:20,689 309    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:07:20,724 344    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:07:20,924 544    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:07:21,505 1125   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:07:21,551 1171   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:07:21,562 1182   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:07:21,562 1182   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:07:21,562 1182   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:07:21,562 1182   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:07:21,563 1183   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 11:07:21,565 1185   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@570bda68
+2020-08-03 11:07:21,604 1224   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:07:21,604 1224   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:07:21,604 1224   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:07:21,634 1254   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=13608&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424041346, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:08:21,605 61225  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:08:21,605 61225  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:08:23,042 62662  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:08:23,043 62663  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:09:23,044 122664 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:09:23,044 122664 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:09:25,094 124714 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:09:25,095 124715 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:10:09,368 168988 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 11:10:11,103 170723 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:10:13,105 172725 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 11:10:14,976 174596 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:11:08,395 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:11:08,425 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:11:08 CST 2020]; root of context hierarchy
+2020-08-03 11:11:08,465 70     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:11:08,715 320    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:11:08,745 350    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:11:08,955 560    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:11:09,505 1110   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:11:09,552 1157   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:11:09,560 1165   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 11:11:09,565 1170   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@52fb49d2
+2020-08-03 11:11:09,605 1210   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:11:09,605 1210   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:11:09,615 1220   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:11:09,625 1230   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80002, negotiated timeout = 40000
+2020-08-03 11:11:09,635 1240   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:11:09,645 1250   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:09,695 1300   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:09,725 1330   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335, urls: [dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=configurators&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:09,912 1517   [ost-startStop-1] INFO  oting.transport.AbstractClient  -  [DUBBO] Successed connect to server /10.254.5.121:20880 from NettyClient 10.254.5.121 using dubbo version 2.6.2, channel is NettyChannel [channel=[id: 0x7d2ea2ff, /10.254.5.121:52661 => /10.254.5.121:20880]], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:09,915 1520   [ost-startStop-1] INFO  oting.transport.AbstractClient  -  [DUBBO] Start NettyClient LAPTOP-5DVP18HI/10.254.5.121 connect to the server /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:09,975 1580   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Refer dubbo service cn.sz.service.UserService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=11220&register.ip=10.254.5.121&remote.timestamp=1596424254520&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:11:10,245 1850   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/user/findById/{id}],methods=[GET]}" onto public java.lang.String cn.sz.controller.UserConctoller.findById(java.lang.Integer)
+2020-08-03 11:11:10,605 2210   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:11:08 CST 2020]; root of context hierarchy
+2020-08-03 11:11:10,665 2270   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:11:08 CST 2020]; root of context hierarchy
+2020-08-03 11:11:10,815 2420   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 2420 ms
+2020-08-03 11:14:22,045 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:14:22,079 34     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:14:22 CST 2020]; root of context hierarchy
+2020-08-03 11:14:22,145 100    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:14:22,965 920    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:14:23,009 964    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:14:23,423 1378   [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:23,423 1378   [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:23,430 1385   [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:23,435 1390   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:14:23,820 1775   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/user/findById/{id}],methods=[GET]}" onto public java.lang.String cn.sz.controller.UserConctoller.findById(java.lang.Integer)
+2020-08-03 11:14:24,325 2280   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:14:22 CST 2020]; root of context hierarchy
+2020-08-03 11:14:24,436 2391   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:14:22 CST 2020]; root of context hierarchy
+2020-08-03 11:14:24,609 2564   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 2561 ms
+2020-08-03 11:15:04,025 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:15:04,055 30     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:15:04 CST 2020]; root of context hierarchy
+2020-08-03 11:15:04,091 66     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:15:04,457 432    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:15:04,487 462    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:15:04,730 705    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:04,730 705    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:04,735 710    [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:04,740 715    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:15:05,160 1135   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\86176\.dubbo\dubbo-registry-dubbo-consumer-127.0.0.1:2181.cache, data: {cn.sz.service.UserService=empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=configurators&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335 empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=11220&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424269335 dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520}, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,225 1200   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:15:05,270 1245   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:15:05,280 1255   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 11:15:05,285 1260   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@1dfa9580
+2020-08-03 11:15:05,326 1301   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:15:05,326 1301   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:15:05,326 1301   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:15:05,345 1320   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80005, negotiated timeout = 40000
+2020-08-03 11:15:05,357 1332   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:15:05,357 1332   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,405 1380   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,427 1402   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, urls: [dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240, dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=configurators&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,599 1574   [ost-startStop-1] INFO  oting.transport.AbstractClient  -  [DUBBO] Successed connect to server /10.254.5.121:20880 from NettyClient 10.254.5.121 using dubbo version 2.6.2, channel is NettyChannel [channel=[id: 0x66a5de26, /10.254.5.121:52718 => /10.254.5.121:20880]], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,599 1574   [ost-startStop-1] INFO  oting.transport.AbstractClient  -  [DUBBO] Start NettyClient LAPTOP-5DVP18HI/10.254.5.121 connect to the server /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,680 1655   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Refer dubbo service cn.sz.service.UserService from url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?anyhost=true&application=dubbo-consumer&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=10904&register.ip=10.254.5.121&remote.timestamp=1596424468240&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:05,691 1666   [ost-startStop-1] INFO  nnotation.ReferenceBeanBuilder  - <dubbo:reference object="com.alibaba.dubbo.common.bytecode.proxy0@61aae5e2" singleton="true" interface="cn.sz.service.UserService" uniqueServiceName="cn.sz.service.UserService" generic="false" id="cn.sz.service.UserService" /> has been built.
+2020-08-03 11:15:05,851 1826   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/user/findById/{id}],methods=[GET]}" onto public java.lang.String cn.sz.controller.UserConctoller.findById(java.lang.Integer)
+2020-08-03 11:15:06,206 2181   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:15:04 CST 2020]; root of context hierarchy
+2020-08-03 11:15:06,265 2240   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:15:04 CST 2020]; root of context hierarchy
+2020-08-03 11:15:06,387 2362   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 2362 ms
+2020-08-03 11:15:08,975 4950   [p-1-EventThread] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095, urls: [dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:12,375 0      [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-03 11:25:12,408 33     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:25:12 CST 2020]; root of context hierarchy
+2020-08-03 11:25:12,464 89     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-mvc.xml]
+2020-08-03 11:25:12,764 389    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from class path resource [spring-dubbo.xml]
+2020-08-03 11:25:12,804 429    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:25:13,170 795    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:13,170 795    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:13,178 803    [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] No Spring Bean annotating Dubbo's @Service was found under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:13,184 809    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:25:13,848 1473   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\86176\.dubbo\dubbo-registry-dubbo-consumer-127.0.0.1:2181.cache, data: {cn.sz.service.UserService=empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=configurators&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095 empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=10904&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596424505095 dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990}, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:13,957 1582   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:25:14,006 1631   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:25:14,023 1648   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:25:14,023 1648   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:25:14,023 1648   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:25:14,023 1648   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:25:14,024 1649   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:25:14,025 1650   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:25:14,025 1650   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:25:14,025 1650   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:25:14,025 1650   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:25:14,025 1650   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-consumer
+2020-08-03 11:25:14,031 1656   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@fb411b5
+2020-08-03 11:25:14,089 1714   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:25:14,091 1716   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:25:14,095 1720   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:25:14,107 1732   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80008, negotiated timeout = 40000
+2020-08-03 11:25:14,126 1751   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:25:14,134 1759   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=consumers&check=false&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:14,211 1836   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:14,251 1876   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, urls: [empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=configurators&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, empty://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:14,264 1889   [ost-startStop-1] WARN  ba.dubbo.config.AbstractConfig  -  [DUBBO] null, dubbo version: 2.6.2, current host: 10.254.5.121
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.alibaba.dubbo.config.AbstractConfig.toString(AbstractConfig.java:474)
+	at java.lang.String.valueOf(String.java:2994)
+	at java.lang.StringBuilder.append(StringBuilder.java:131)
+	at com.alibaba.dubbo.config.spring.beans.factory.annotation.AbstractAnnotationConfigBeanBuilder.build(AbstractAnnotationConfigBeanBuilder.java:79)
+	at com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.buildReferenceBean(ReferenceAnnotationBeanPostProcessor.java:385)
+	at com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.access$100(ReferenceAnnotationBeanPostProcessor.java:65)
+	at com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor$ReferenceFieldElement.inject(ReferenceAnnotationBeanPostProcessor.java:363)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at com.alibaba.dubbo.config.spring.beans.factory.annotation.ReferenceAnnotationBeanPostProcessor.postProcessPropertyValues(ReferenceAnnotationBeanPostProcessor.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:672)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:638)
+	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:686)
+	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:554)
+	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:499)
+	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:172)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:160)
+	at org.apache.catalina.core.StandardWrapper.initServlet(StandardWrapper.java:1280)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1193)
+	at org.apache.catalina.core.StandardWrapper.load(StandardWrapper.java:1088)
+	at org.apache.catalina.core.StandardContext.loadOnStartup(StandardContext.java:5176)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5460)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Failed to check the status of the service cn.sz.service.UserService. No provider available for the service cn.sz.service.UserService from the url zookeeper://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-consumer&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&register.ip=10.254.5.121&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778 to the consumer 10.254.5.121 use dubbo version 2.6.2
+	at com.alibaba.dubbo.config.ReferenceConfig.createProxy(ReferenceConfig.java:422)
+	at com.alibaba.dubbo.config.ReferenceConfig.init(ReferenceConfig.java:333)
+	at com.alibaba.dubbo.config.ReferenceConfig.get(ReferenceConfig.java:163)
+	at com.alibaba.dubbo.config.spring.ReferenceBean.getObject(ReferenceBean.java:66)
+	... 42 more
+2020-08-03 11:25:14,271 1896   [ost-startStop-1] INFO  nnotation.ReferenceBeanBuilder  - <dubbo:reference singleton="true" interface="cn.sz.service.UserService" uniqueServiceName="cn.sz.service.UserService" generic="false" id="cn.sz.service.UserService" /> has been built.
+2020-08-03 11:25:14,533 2158   [ost-startStop-1] INFO  n.RequestMappingHandlerMapping  - Mapped "{[/user/findById/{id}],methods=[GET]}" onto public java.lang.String cn.sz.controller.UserConctoller.findById(java.lang.Integer)
+2020-08-03 11:25:15,123 2748   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:25:12 CST 2020]; root of context hierarchy
+2020-08-03 11:25:15,234 2859   [ost-startStop-1] INFO  n.RequestMappingHandlerAdapter  - Looking for @ControllerAdvice: WebApplicationContext for namespace 'dispatcherServlet-servlet': startup date [Mon Aug 03 11:25:12 CST 2020]; root of context hierarchy
+2020-08-03 11:25:15,464 3089   [ost-startStop-1] INFO  .web.servlet.DispatcherServlet  - FrameworkServlet 'dispatcherServlet': initialization completed in 3087 ms
+2020-08-03 11:25:23,314 10939  [p-1-EventThread] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url consumer://10.254.5.121/cn.sz.service.UserService?application=dubbo-consumer&category=providers,configurators,routers&dubbo=2.6.2&interface=cn.sz.service.UserService&methods=findById&pid=18580&revision=1.0-SNAPSHOT&side=consumer&timestamp=1596425113778, urls: [dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,495 11120  [p-1-EventThread] INFO  oting.transport.AbstractClient  -  [DUBBO] Successed connect to server /10.254.5.121:20880 from NettyClient 10.254.5.121 using dubbo version 2.6.2, channel is NettyChannel [channel=[id: 0x2c6b5a00, /10.254.5.121:53019 => /10.254.5.121:20880]], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,496 11121  [p-1-EventThread] INFO  oting.transport.AbstractClient  -  [DUBBO] Start NettyClient LAPTOP-5DVP18HI/10.254.5.121 connect to the server /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
