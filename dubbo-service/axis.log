@@ -1,0 +1,859 @@
+2020-08-03 10:44:18,168 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:44:18,247 79     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:44:18 CST 2020]; root of context hierarchy
+2020-08-03 10:44:18,303 135    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:44:18,473 305    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:44:18,511 343    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:44:18,532 364    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:44:18,784 616    [ost-startStop-1] WARN  .mapper.ClassPathMapperScanner  - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+2020-08-03 10:44:18,818 650    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:44:19,468 1300   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-03 10:44:19,471 1303   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 34 more
+2020-08-03 10:48:18,251 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:48:18,303 52     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:48:18 CST 2020]; root of context hierarchy
+2020-08-03 10:48:18,375 124    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:48:18,547 296    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:48:18,597 346    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:48:18,633 382    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:48:18,873 622    [ost-startStop-1] WARN  .mapper.ClassPathMapperScanner  - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+2020-08-03 10:48:18,903 652    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:48:19,536 1285   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-03 10:48:19,544 1293   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 34 more
+2020-08-03 10:49:19,303 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:49:19,360 57     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:49:19 CST 2020]; root of context hierarchy
+2020-08-03 10:49:19,423 120    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:49:19,598 295    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:49:19,633 330    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:49:19,653 350    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:49:20,053 750    [ost-startStop-1] WARN  .mapper.ClassPathMapperScanner  - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+2020-08-03 10:49:20,075 772    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:49:20,543 1240   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-03 10:49:20,543 1240   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 34 more
+2020-08-03 10:51:58,585 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:51:58,644 59     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:51:58 CST 2020]; root of context hierarchy
+2020-08-03 10:51:58,706 121    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:51:58,867 282    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:51:58,913 328    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:51:58,943 358    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:51:59,243 658    [ost-startStop-1] WARN  .mapper.ClassPathMapperScanner  - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+2020-08-03 10:51:59,274 689    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:51:59,923 1338   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-03 10:51:59,927 1342   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 34 more
+2020-08-03 10:56:12,373 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:56:12,424 51     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:56:12 CST 2020]; root of context hierarchy
+2020-08-03 10:56:12,474 101    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:56:12,644 271    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:56:12,688 315    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:56:12,718 345    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:56:13,138 765    [ost-startStop-1] WARN  .mapper.ClassPathMapperScanner  - No MyBatis mapper was found in '[com.itheima.dao]' package. Please check your configuration.
+2020-08-03 10:56:13,173 800    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:56:13,717 1344   [ost-startStop-1] WARN  pport.XmlWebApplicationContext  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-08-03 10:56:13,720 1347   [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'cn.sz.service.UserService': Cannot resolve reference to bean 'userService' while setting bean property 'ref'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:378)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:110)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1605)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1357)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:587)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:367)
+	... 24 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'cn.sz.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1509)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1104)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	... 34 more
+2020-08-03 10:57:24,635 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:57:24,694 59     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:57:24 CST 2020]; root of context hierarchy
+2020-08-03 10:57:24,734 99     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:57:24,878 243    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:57:24,957 322    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:57:24,984 349    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:57:25,474 839    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:57:26,224 1589   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:26,349 1714   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:26,349 1714   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:26,349 1714   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244 to registry registry://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=17284&registry=zookeeper&timestamp=1596423446233, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:26,505 1870   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:26,606 1971   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:57:26,654 2019   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 10:57:26,677 2042   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2081 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@50977ecb
+2020-08-03 10:57:26,715 2080   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:26,717 2082   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:57:26,717 2082   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:57:28,754 4119   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:29,875 5240   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:31,924 7289   [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:33,044 8409   [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:35,104 10469  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:36,224 11589  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:38,284 13649  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:39,394 14759  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:41,454 16819  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:42,574 17939  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:44,614 19979  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:45,754 21119  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:47,804 23169  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:48,944 24309  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:50,984 26349  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:52,104 27469  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:54,144 29509  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:55,264 30629  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:57:57,334 32699  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:57:58,454 33819  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:00,467 35832  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:01,574 36939  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:03,624 38989  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:03,727 39092  [ost-startStop-1] ERROR work.web.context.ContextLoader  - Context initialization failed
+java.lang.IllegalStateException: Failed to register dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244 to registry 127.0.0.1:2081, cause: Failed to register dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=17284&timestamp=1596423446233, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:144)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.register(RegistryProtocol.java:125)
+	at com.alibaba.dubbo.registry.integration.RegistryProtocol.export(RegistryProtocol.java:145)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolFilterWrapper.export(ProtocolFilterWrapper.java:98)
+	at com.alibaba.dubbo.rpc.protocol.ProtocolListenerWrapper.export(ProtocolListenerWrapper.java:55)
+	at com.alibaba.dubbo.qos.protocol.QosProtocolWrapper.export(QosProtocolWrapper.java:54)
+	at com.alibaba.dubbo.rpc.Protocol$Adaptive.export(Protocol$Adaptive.java)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrlsFor1Protocol(ServiceConfig.java:506)
+	at com.alibaba.dubbo.config.ServiceConfig.doExportUrls(ServiceConfig.java:358)
+	at com.alibaba.dubbo.config.ServiceConfig.doExport(ServiceConfig.java:317)
+	at com.alibaba.dubbo.config.ServiceConfig.export(ServiceConfig.java:216)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:123)
+	at com.alibaba.dubbo.config.spring.ServiceBean.onApplicationEvent(ServiceBean.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:400)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:354)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:888)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:409)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:291)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:103)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.alibaba.dubbo.rpc.RpcException: Failed to register dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=17284&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423446244 to zookeeper zookeeper://127.0.0.1:2081/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&interface=com.alibaba.dubbo.registry.RegistryService&pid=17284&timestamp=1596423446233, cause: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:116)
+	at com.alibaba.dubbo.registry.support.FailbackRegistry.register(FailbackRegistry.java:131)
+	... 31 more
+Caused by: java.lang.IllegalStateException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:79)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:65)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.create(AbstractZookeeperClient.java:59)
+	at com.alibaba.dubbo.registry.zookeeper.ZookeeperRegistry.doRegister(ZookeeperRegistry.java:114)
+	... 32 more
+Caused by: org.apache.zookeeper.KeeperException$ConnectionLossException: KeeperErrorCode = ConnectionLoss for /dubbo
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:99)
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:51)
+	at org.apache.zookeeper.ZooKeeper.create(ZooKeeper.java:783)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1177)
+	at org.apache.curator.framework.imps.CreateBuilderImpl$17.call(CreateBuilderImpl.java:1158)
+	at org.apache.curator.connection.StandardConnectionHandlingPolicy.callWithRetry(StandardConnectionHandlingPolicy.java:64)
+	at org.apache.curator.RetryLoop.callWithRetry(RetryLoop.java:100)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.pathInForeground(CreateBuilderImpl.java:1155)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.protectedPathInForeground(CreateBuilderImpl.java:605)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:595)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:573)
+	at org.apache.curator.framework.imps.CreateBuilderImpl.forPath(CreateBuilderImpl.java:49)
+	at com.alibaba.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createPersistent(CuratorZookeeperClient.java:76)
+	... 37 more
+2020-08-03 10:58:03,738 39103  [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Closing Root WebApplicationContext: startup date [Mon Aug 03 10:57:24 CST 2020]; root of context hierarchy
+2020-08-03 10:58:04,724 40089  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:06,734 42099  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:07,854 43219  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:09,894 45259  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:11,014 46379  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:13,064 48429  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:14,194 49559  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:16,234 51599  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:17,364 52729  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:19,414 54779  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:20,544 55909  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:22,594 57959  [127.0.0.1:2081)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 10:58:23,714 59079  [127.0.0.1:2081)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2081. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:35,099 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 10:58:35,154 55     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 10:58:35 CST 2020]; root of context hierarchy
+2020-08-03 10:58:35,198 99     [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 10:58:35,334 235    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 10:58:35,379 280    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 10:58:35,409 310    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 10:58:35,705 606    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 10:58:36,604 1505   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:58:36,694 1595   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:58:36,694 1595   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=13584&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423516619, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:58:36,694 1595   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=13584&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423516619 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=13584&registry=zookeeper&timestamp=1596423516613, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:58:36,846 1747   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:58:36,957 1858   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 10:58:37,005 1906   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 10:58:37,016 1917   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 10:58:37,018 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@6dae1f73
+2020-08-03 10:58:37,046 1947   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:58:37,048 1949   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 10:58:37,048 1949   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 10:58:37,048 1949   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=13584&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423516619, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 10:59:37,054 61955  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60006ms for sessionid 0x0
+2020-08-03 10:59:37,054 61955  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60006ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 10:59:38,844 63745  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 10:59:38,844 63745  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:00:38,844 123745 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0
+2020-08-03 11:00:38,844 123745 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:00:40,727 125628 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:00:40,728 125629 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:02:28,874 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:02:28,934 60     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:02:28 CST 2020]; root of context hierarchy
+2020-08-03 11:02:28,989 115    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:02:29,144 270    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:02:29,184 310    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:02:29,219 345    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:02:29,604 730    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:02:30,647 1773   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:02:30,794 1920   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:02:30,794 1920   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=6740&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423750669, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:02:30,794 1920   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=6740&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423750669 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=6740&registry=zookeeper&timestamp=1596423750657, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:02:31,009 2135   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:02:31,144 2270   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:02:31,193 2319   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:02:31,205 2331   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:02:31,213 2339   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@4b3aeb32
+2020-08-03 11:02:31,245 2371   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:02:31,245 2371   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:02:31,245 2371   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:02:31,254 2380   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=6740&revision=1.0-SNAPSHOT&side=provider&timestamp=1596423750669, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:03:31,246 62372  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:03:31,246 62372  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:03:32,392 63518  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:03:32,393 63519  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:04:32,394 123520 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:04:32,394 123520 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:04:34,294 125420 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:04:34,294 125420 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:05:34,294 185420 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0
+2020-08-03 11:05:34,294 185420 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60000ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:05:36,085 187211 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:05:36,086 187212 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:06:53,314 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:06:53,379 65     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:06:53 CST 2020]; root of context hierarchy
+2020-08-03 11:06:53,425 111    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:06:53,566 252    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:06:53,605 291    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:06:53,647 333    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:06:53,980 666    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:06:54,858 1544   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:06:54,960 1646   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:06:54,960 1646   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=11936&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424014878, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:06:54,960 1646   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=11936&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424014878 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=11936&registry=zookeeper&timestamp=1596424014870, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:06:55,101 1787   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:06:55,199 1885   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:06:55,234 1920   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:06:55,244 1930   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:06:55,249 1935   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:06:55,249 1935   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:06:55,249 1935   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:06:55,249 1935   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:06:55,251 1937   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@47b0cb0
+2020-08-03 11:06:55,274 1960   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:06:55,279 1965   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:06:55,281 1967   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:06:55,283 1969   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=11936&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424014878, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:14,937 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:07:15,028 91     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:07:15 CST 2020]; root of context hierarchy
+2020-08-03 11:07:15,111 174    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:07:15,322 385    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:07:15,375 438    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:07:15,412 475    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:07:15,945 1008   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:07:17,489 2552   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:17,705 2768   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:17,705 2768   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=15232&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424037520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:17,705 2768   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=15232&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424037520 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=15232&registry=zookeeper&timestamp=1596424037501, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:17,977 3040   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:07:18,108 3171   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:07:18,168 3231   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:07:18,189 3252   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:07:18,195 3258   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:07:18,195 3258   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@6a7814bc
+2020-08-03 11:07:18,244 3307   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:07:18,244 3307   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:07:18,247 3310   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:07:18,247 3310   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=15232&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424037520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:08:18,248 63311  [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:08:18,248 63311  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:08:19,452 64515  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:08:19,453 64516  [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:09:19,454 124517 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0
+2020-08-03 11:09:19,454 124517 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Client session timed out, have not heard from server in 60001ms for sessionid 0x0, closing socket connection and attempting reconnect
+2020-08-03 11:09:20,876 125939 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:09:20,877 125940 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:10:09,368 174431 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server 127.0.0.1/127.0.0.1:2181, unexpected error, closing socket connection and attempting reconnect
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:380)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:68)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:366)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 11:10:10,669 175732 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:10:12,672 177735 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 11:10:14,366 179429 [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:10:16,368 181431 [127.0.0.1:2181)] WARN  rg.apache.zookeeper.ClientCnxn  - Session 0x0 for server null, unexpected error, closing socket connection and attempting reconnect
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:361)
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1141)
+2020-08-03 11:10:52,705 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:10:52,775 70     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:10:52 CST 2020]; root of context hierarchy
+2020-08-03 11:10:52,850 145    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:10:53,035 330    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:10:53,085 380    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:10:53,120 415    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:10:53,514 809    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:10:54,495 1790   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:54,635 1930   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:54,635 1930   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:54,635 1930   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=1404&registry=zookeeper&timestamp=1596424254505, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:54,825 2120   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:54,925 2220   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:10:54,975 2270   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:10:54,988 2283   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar;C:\Users\86176\.IntelliJIdea2018.2\system\captureAgent\debugger-agent.jar
+2020-08-03 11:10:54,989 2284   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:10:54,989 2284   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:10:54,989 2284   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:10:54,989 2284   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:10:54,989 2284   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:10:54,990 2285   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:10:54,990 2285   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:10:54,990 2285   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:10:54,990 2285   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:10:54,991 2286   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@28fdc7c0
+2020-08-03 11:10:55,015 2310   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:10:55,015 2310   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:10:55,015 2310   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:10:55,025 2320   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:55,035 2330   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80001, negotiated timeout = 40000
+2020-08-03 11:10:55,055 2350   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:10:55,105 2400   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:55,135 2430   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, urls: [empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:10:55,165 2460   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 2460 ms
+2020-08-03 11:11:20,767 28062  [:20880-thread-2] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2020-08-03 11:12:31,895 99190  [ver worker #1-1] WARN  oting.transport.AbstractServer  -  [DUBBO] All clients has discontected from /10.254.5.121:20880. You can graceful shutdown now., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:12:31,895 99190  [:20880-thread-4] INFO  c.protocol.dubbo.DubboProtocol  -  [DUBBO] disconnected from /10.254.5.121:52661,url:dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&channel.readonly.sent=true&codec=dubbo&dubbo=2.6.2&generic=false&heartbeat=60000&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:26,677 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:14:26,728 51     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:14:26 CST 2020]; root of context hierarchy
+2020-08-03 11:14:26,788 111    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:14:26,940 263    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:14:27,015 338    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:14:27,045 368    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:14:27,463 786    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:27,463 786    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:27,475 798    [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:userServiceImpl:cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:27,475 798    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'userServiceImpl': Generic bean: class [cn.sz.service.impl.UserServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\cn\sz\service\impl\UserServiceImpl.class]] } were scanned under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:27,515 838    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:14:28,222 1545   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,325 1648   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,325 1648   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,325 1648   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=492&registry=zookeeper&timestamp=1596424468230, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,455 1778   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,475 1798   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\86176\.dubbo\dubbo-registry-dubbo-service-127.0.0.1:2181.cache, data: {cn.sz.service.UserService=empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=1404&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424254520}, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,554 1877   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:14:28,586 1909   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:14:28,596 1919   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:14:28,600 1923   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@73a1ac14
+2020-08-03 11:14:28,627 1950   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:14:28,627 1950   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:14:28,627 1950   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,627 1950   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:14:28,647 1970   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80003, negotiated timeout = 40000
+2020-08-03 11:14:28,667 1990   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:14:28,705 2028   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,728 2051   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240, urls: [empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:14:28,767 2090   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 2090 ms
+2020-08-03 11:14:59,435 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:14:59,576 141    [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:14:59 CST 2020]; root of context hierarchy
+2020-08-03 11:14:59,680 245    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:14:59,979 544    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:15:00,113 678    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:15:00,153 718    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:15:00,608 1173   [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:00,608 1173   [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:00,630 1195   [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:userServiceImpl:cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:00,630 1195   [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'userServiceImpl': Generic bean: class [cn.sz.service.impl.UserServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\cn\sz\service\impl\UserServiceImpl.class]] } were scanned under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:00,717 1282   [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:15:01,965 2530   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,105 2670   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,105 2670   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,105 2670   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=332&registry=zookeeper&timestamp=1596424501977, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,340 2905   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,371 2936   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\86176\.dubbo\dubbo-registry-dubbo-service-127.0.0.1:2181.cache, data: {cn.sz.service.UserService=empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=492&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424468240}, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,499 3064   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:15:02,555 3120   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:15:02,569 3134   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:15:02,575 3140   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:15:02,575 3140   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:15:02,575 3140   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:15:02,575 3140   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:15:02,575 3140   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@68884cb1
+2020-08-03 11:15:02,610 3175   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:15:02,615 3180   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,625 3190   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:15:02,638 3203   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:15:02,655 3220   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80004, negotiated timeout = 40000
+2020-08-03 11:15:02,665 3230   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:15:02,701 3266   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,721 3286   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990, urls: [empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:15:02,756 3321   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 3316 ms
+2020-08-03 11:15:16,541 17106  [:20880-thread-2] INFO  aba.druid.pool.DruidDataSource  - {dataSource-1} inited
+2020-08-03 11:25:21,343 0      [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization started
+2020-08-03 11:25:21,411 68     [ost-startStop-1] INFO  pport.XmlWebApplicationContext  - Refreshing Root WebApplicationContext: startup date [Mon Aug 03 11:25:21 CST 2020]; root of context hierarchy
+2020-08-03 11:25:21,465 122    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dao.xml]
+2020-08-03 11:25:21,634 291    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-dubbo.xml]
+2020-08-03 11:25:21,671 328    [ost-startStop-1] INFO  bo.common.logger.LoggerFactory  - using logger: com.alibaba.dubbo.common.logger.log4j.Log4jLoggerAdapter
+2020-08-03 11:25:21,692 349    [ost-startStop-1] INFO  ry.xml.XmlBeanDefinitionReader  - Loading XML bean definitions from file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\spring-service.xml]
+2020-08-03 11:25:22,030 687    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator bean can't be found in BeanFactory with name [org.springframework.context.annotation.internalConfigurationBeanNameGenerator], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,030 687    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] BeanNameGenerator will be a instance of org.springframework.context.annotation.AnnotationBeanNameGenerator , it maybe a potential problem on bean name generation., dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,048 705    [ost-startStop-1] WARN  iceAnnotationBeanPostProcessor  -  [DUBBO] The BeanDefinition[Root bean: class [com.alibaba.dubbo.config.spring.ServiceBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null] of ServiceBean has been registered with name : ServiceBean:userServiceImpl:cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,048 705    [ost-startStop-1] INFO  iceAnnotationBeanPostProcessor  -  [DUBBO] 1 annotated Dubbo's @Service Components { [Bean definition with name 'userServiceImpl': Generic bean: class [cn.sz.service.impl.UserServiceImpl]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [D:\frameProject\dubbo-parent\dubbo-service\target\classes\cn\sz\service\impl\UserServiceImpl.class]] } were scanned under package[cn.sz], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,087 744    [ost-startStop-1] INFO  redAnnotationBeanPostProcessor  - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-08-03 11:25:22,831 1488   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] The service ready on spring started. service: cn.sz.service.UserService, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,934 1591   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to local registry, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,934 1591   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Export dubbo service cn.sz.service.UserService to url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:22,934 1591   [ost-startStop-1] INFO  ba.dubbo.config.AbstractConfig  -  [DUBBO] Register dubbo service cn.sz.service.UserService url dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&bind.ip=10.254.5.121&bind.port=20880&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847 to registry registry://127.0.0.1:2181/com.alibaba.dubbo.registry.RegistryService?application=dubbo-service&dubbo=2.6.2&pid=2120&registry=zookeeper&timestamp=1596425122839, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,075 1732   [ost-startStop-1] INFO  oting.transport.AbstractServer  -  [DUBBO] Start NettyServer bind /0.0.0.0:20880, export /10.254.5.121:20880, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,092 1749   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Load registry store file C:\Users\86176\.dubbo\dubbo-registry-dubbo-service-127.0.0.1:2181.cache, data: {cn.sz.service.UserService=empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=332&revision=1.0-SNAPSHOT&side=provider&timestamp=1596424501990}, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,162 1819   [ost-startStop-1] INFO  he.curator.utils.Compatibility  - Running in ZooKeeper 3.4.x compatibility mode
+2020-08-03 11:25:23,203 1860   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Starting
+2020-08-03 11:25:23,214 1871   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:zookeeper.version=3.4.7-1713338, built on 11/09/2015 04:32 GMT
+2020-08-03 11:25:23,214 1871   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:host.name=LAPTOP-5DVP18HI
+2020-08-03 11:25:23,214 1871   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.version=1.8.0_162
+2020-08-03 11:25:23,214 1871   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.vendor=Oracle Corporation
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.home=D:\java\jdk-8u162\jre
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.class.path=D:\maven\apache-maven-3.5.2\boot\plexus-classworlds-2.5.2.jar;D:\idea\IntelliJ IDEA 2018.2.8\lib\idea_rt.jar
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.library.path=D:\java\jdk-8u162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;D:\java\jdk-8u162\bin;D:\MYSQL\bin;D:\maven\apache-maven-3.5.2\bin;C:\Program Files\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\RabbitMQ\erl9.2\bin;C:\Program Files\nodejs\;D:\svn\bin;D:\TortoiseSVN\bin;D:\BaiduNetdiskDownload\swagger-ui-master\node_modules\.bin;D:\OpenSSL-Win64\bin;C:\Users\86176\AppData\Local\Microsoft\WindowsApps;C:\Users\86176\AppData\Roaming\npm;.
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.io.tmpdir=C:\Users\86176\AppData\Local\Temp\
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:java.compiler=<NA>
+2020-08-03 11:25:23,215 1872   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.name=Windows 10
+2020-08-03 11:25:23,216 1873   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.arch=amd64
+2020-08-03 11:25:23,216 1873   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:os.version=10.0
+2020-08-03 11:25:23,216 1873   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.name=86176
+2020-08-03 11:25:23,216 1873   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.home=C:\Users\86176
+2020-08-03 11:25:23,216 1873   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Client environment:user.dir=D:\frameProject\dubbo-parent\dubbo-service
+2020-08-03 11:25:23,217 1874   [ost-startStop-1] INFO  org.apache.zookeeper.ZooKeeper  - Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=60000 watcher=org.apache.curator.ConnectionState@67a69ae2
+2020-08-03 11:25:23,245 1902   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Opening socket connection to server 127.0.0.1/127.0.0.1:2181. Will not attempt to authenticate using SASL (unknown error)
+2020-08-03 11:25:23,249 1906   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Socket connection established to 127.0.0.1/127.0.0.1:2181, initiating session
+2020-08-03 11:25:23,250 1907   [ost-startStop-1] INFO  work.imps.CuratorFrameworkImpl  - Default schema
+2020-08-03 11:25:23,253 1910   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Register: dubbo://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,269 1926   [127.0.0.1:2181)] INFO  rg.apache.zookeeper.ClientCnxn  - Session establishment complete on server 127.0.0.1/127.0.0.1:2181, sessionid = 0x1000293dcc80009, negotiated timeout = 40000
+2020-08-03 11:25:23,289 1946   [p-1-EventThread] INFO  k.state.ConnectionStateManager  - State change: CONNECTED
+2020-08-03 11:25:23,314 1971   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Subscribe: provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847, dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,341 1998   [ost-startStop-1] INFO  ry.zookeeper.ZookeeperRegistry  -  [DUBBO] Notify urls for subscribe url provider://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847, urls: [empty://10.254.5.121:20880/cn.sz.service.UserService?anyhost=true&application=dubbo-service&category=configurators&check=false&dubbo=2.6.2&generic=false&interface=cn.sz.service.UserService&methods=findById&pid=2120&revision=1.0-SNAPSHOT&side=provider&timestamp=1596425122847], dubbo version: 2.6.2, current host: 10.254.5.121
+2020-08-03 11:25:23,382 2039   [ost-startStop-1] INFO  work.web.context.ContextLoader  - Root WebApplicationContext: initialization completed in 2037 ms
